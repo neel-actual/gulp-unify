@@ -1,6 +1,6 @@
 {
   "name": "gulp-bundler2",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Bundle files together, sorted by dependencies, excluding node_modules",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neel2292/gulp-bundler.git"
+    "url": "git+https://github.com/neel2292/gulp-bundler2.git"
   },
   "keywords": [
     "bundle",
@@ -18,9 +18,9 @@
   "author": "Neel Singh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/neel2292/gulp-bundler/issues"
+    "url": "https://github.com/neel2292/gulp-bundler2/issues"
   },
-  "homepage": "https://github.com/neel2292/gulp-bundler#readme",
+  "homepage": "https://github.com/neel2292/gulp-bundler2#readme",
   "dependencies": {
     "detective": "^5.2.0",
     "through2-concurrent": "^2.0.0",
