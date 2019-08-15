@@ -43,7 +43,6 @@ module.exports = function (filename, opts) {
             var content = contents[file_path],
                 reqs = detective(content);
 
-            console.log(file_path, reqs);
             new_contents[file_path] = content;
             reqs.forEach(function (req) {
                 var req_path = path.join(path.dirname(file_path), req.replace(/\.\w+$/, '')),

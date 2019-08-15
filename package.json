@@ -1,6 +1,6 @@
 {
   "name": "gulp-bundler2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Bundle files together, sorted by dependencies, excluding node_modules",
   "main": "index.js",
   "scripts": {
