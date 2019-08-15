@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/neel2292/gulp-bundler/issues"
   },
-  "homepage": "https://github.com/neel2292/gulp-bundler#readme"
+  "homepage": "https://github.com/neel2292/gulp-bundler#readme",
+  "dependencies": {
+    "detective": "^5.2.0",
+    "through2-concurrent": "^2.0.0",
+    "vinyl": "^2.2.0"
+  }
 }
