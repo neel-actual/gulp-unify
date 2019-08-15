@@ -1,6 +1,7 @@
 # Why?
 
-Browserify is made to bundle codes for browser usage. What if we just want to bundle code for usage in node.js?
+Bundle files together, sorted by dependencies, excluding node_modules. Browserify is made to bundle codes for browser usage. What if we just want to bundle 
+code for usage in node.js?
 
 # Installation
 
