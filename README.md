@@ -5,13 +5,13 @@ code for usage in node.js?
 
 # Installation
 
-`npm install --save-dev gulp-bundler2`
+`npm install --save-dev gulp-unify`
 
 # Usage
 
 ```javascript
 var gulp = require('gulp'),
-    bundler = require('gulp-bundler2');
+    bundler = require('gulp-unify');
 
 gulp.task('bundle', function() {
   return gulp.src(['./codes/*.js', './api/*.js'])
@@ -24,7 +24,7 @@ gulp.task('bundle', function() {
 
 ```javascript
 var gulp = require('gulp'),
-    bundler = require('gulp-bundler2');
+    bundler = require('gulp-unify');
 
 gulp.task('bundle', function() {
   return gulp.src(['./codes/*.js', './api/*.js'])

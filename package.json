@@ -1,6 +1,6 @@
 {
-  "name": "gulp-bundler2",
-  "version": "1.0.4",
+  "name": "gulp-unify",
+  "version": "1.1.1",
   "description": "Bundle files together, sorted by dependencies, excluding node_modules",
   "main": "index.js",
   "scripts": {
@@ -18,9 +18,9 @@
   "author": "Neel Singh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/neel2292/gulp-bundler2/issues"
+    "url": "https://github.com/neel2292/gulp-unify/issues"
   },
-  "homepage": "https://github.com/neel2292/gulp-bundler2#readme",
+  "homepage": "https://github.com/neel2292/gulp-unify#readme",
   "dependencies": {
     "detective": "^5.2.0",
     "through2-concurrent": "^2.0.0",
