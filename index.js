@@ -50,7 +50,8 @@ module.exports = function (filename, opts) {
                     hash_name;
 
                 if (req_content) {
-                    hash_name = path.basename(req_path) + '_' + hash(req_content);
+                    // hash_name = path.basename(req_path) + '_' + hash(req_content);
+                    hash_name = hash(req_content).toString(36).replace(/^\d/, path.basename(req_path)[0]);
                     requires[req_path] = requires[req_path] || hash_name;
                     new_contents[file_path] = new_contents[file_path].replace(
                         new RegExp('require\\(\\\''+ req.replace('.', '\\.') + '\\\'\\)', 'g'),
@@ -152,15 +153,15 @@ function createEdges (deps) {
 
 //hash function for unique identification
 function hash(str) {
-    var val = 0;
+    var hash = 5381,
+        i    = str.length;
 
-    if (str.length === 0) { return val; }
-
-    for (var i = 0; i < str.length; i++) {
-        var char = str.charCodeAt(i);
-        val = ((val<<5)-val)+char;
-        val = val & val; // Convert to 32bit integer
+    while(i) {
+        hash = (hash * 33) ^ str.charCodeAt(--i);
     }
 
-    return String(val).replace(/-/g, '0');
+    /* JavaScript does bitwise operations (like XOR, above) on 32-bit signed
+     * integers. Since we want the results to be always positive, convert the
+     * signed int to an unsigned by doing an unsigned bitshift. */
+    return hash >>> 0;
 }
